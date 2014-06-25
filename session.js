@@ -79,3 +79,9 @@ var Session = {
         sessionStorage.clear();
     }
 };
+
+if(define){
+    define([], function() {
+        return Session;
+    });
+}
