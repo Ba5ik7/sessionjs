@@ -1,4 +1,4 @@
-var Session = {
+var Session = window.Session || {
     /* INIT */
     init: function(minutes) {
         this.clear();
@@ -79,9 +79,3 @@ var Session = {
         sessionStorage.clear();
     }
 };
-
-if(define){
-    define([], function() {
-        return Session;
-    });
-}
